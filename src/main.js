@@ -7,7 +7,17 @@ export default class App {
         }
         return resultado;
     }
+    convertirAString(numero){
+        let cadena="",i=1;
+        while(i <= numero){
+            cadena = cadena + "*";
+            i++;
+            console.log(cadena);
+        }
+        return cadena;
+    }
 }
 
 let app = new App();
 app.factorial(5);
+app.convertirAString(5);
