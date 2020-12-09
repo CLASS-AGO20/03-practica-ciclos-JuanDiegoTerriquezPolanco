@@ -27,9 +27,18 @@ export default class App {
         } while (i<numero);
         return aux;
     }
+    elevar(numero, potencia){
+        let aux=1;
+        for(let i=0;i<potencia;i++){
+            aux=aux*numero;
+            console.log(aux);
+        }
+        return aux;
+    }
 }
 
 let app = new App();
 app.factorial(5);
 app.convertirAString(5);
 app.obtenerDivisibles(6);
+app.elevar(3,2);
